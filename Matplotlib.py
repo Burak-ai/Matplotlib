@@ -128,4 +128,8 @@ plt.xticks([1, 2, 3, 4]) # Control where ticks appear and Rename tick labels
 plt.xticks([1, 2, 3, 4], ["One", "Two", "Three", "four"])
 plt.show()
 
-
+plt.bar(x, y)
+plt.scatter(x, y)
+plt.hist(y, bins=5)
+plt.pie(y, labels=x)
+plt.show()
