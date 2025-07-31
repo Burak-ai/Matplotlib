@@ -2,16 +2,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #                 x             y
-"""plt.plot([1, 2, 3, 4], [1, 4, 9, 16])
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16])
 plt.ylabel("Some Numbers")
-plt.show()"""
+plt.show()
 
 
 
-"""
+
 plt.plot([1, 2, 3, 4], [1, 4, 9, 16], "ro")
 plt.axis((0, 6, 0, 20))
-plt.show()"""
+plt.show()
 
 
 
