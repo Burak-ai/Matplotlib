@@ -121,7 +121,7 @@ plt.legend() # Sets the name of the line
 plt.plot(x, y, color='green', linestyle='-', marker='s')
 """color: 'red', 'blue', '#FF00FF', etc. linestyle: '--', '-', ':'
 marker: 'o', '^', 's', etc."""
-plt.grid(True)
+plt.grid(True) # horizontal and vertical dashed lines
 plt.xlim(0, 5)
 plt.ylim(0, 40)
 plt.xticks([1, 2, 3, 4]) # Control where ticks appear and Rename tick labels
