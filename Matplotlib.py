@@ -101,3 +101,31 @@ axs[2, 1].pie(x, y)
 # .axes(projection='3d')
 plt.show()
 
+
+
+# Relearning
+x = [1, 2, 3, 4]
+y = [10, 20 , 25, 30]
+
+# simple plots
+plt.plot(x, y)
+plt.show()
+# more control
+fig, ax = plt.subplots()
+ax.plot(x, y)
+plt.xlabel("X Axis")
+plt.ylabel("Y Axis")
+plt.title("My chart")
+plt.plot(x, y, label="Growth")
+plt.legend() # Sets the name of the line
+plt.plot(x, y, color='green', linestyle='-', marker='s')
+"""color: 'red', 'blue', '#FF00FF', etc. linestyle: '--', '-', ':'
+marker: 'o', '^', 's', etc."""
+plt.grid(True)
+plt.xlim(0, 5)
+plt.ylim(0, 40)
+plt.xticks([1, 2, 3, 4]) # Control where ticks appear and Rename tick labels
+plt.xticks([1, 2, 3, 4], ["One", "Two", "Three", "four"])
+plt.show()
+
+
