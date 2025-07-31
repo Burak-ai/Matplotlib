@@ -133,3 +133,11 @@ plt.scatter(x, y)
 plt.hist(y, bins=5)
 plt.pie(y, labels=x)
 plt.show()
+
+fig, ax = plt.subplots()
+ax.plot(x, y)
+ax.set_title("Object-Oriented Title")
+ax.set_xlabel("X Axis")
+ax.set_ylabel("Y Axis")
+plt.show()
+
