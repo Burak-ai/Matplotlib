@@ -141,3 +141,28 @@ ax.set_xlabel("X Axis")
 ax.set_ylabel("Y Axis")
 plt.show()
 
+
+# side-by-side plots
+x = [1, 2, 3, 4]
+y1 = [10, 20, 25, 30]
+y2 = [30, 25, 20, 10]
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
+
+# Left subplot
+ax1.plot(x, y1, color='blue')
+ax1.set_title("Growth")
+ax1.set_xlabel("X Axis")
+ax1.set_ylabel("Y Axis")
+ax1.grid(True)
+
+# Right subplot
+ax2.plot(x, y2, color='red')
+ax2.set_title("Decline")
+ax2.set_xlabel("X Axis")
+ax2.set_ylabel("Y Axis")
+ax2.grid(True)
+
+# Adjust layout so titles and labels don't overlap
+fig.tight_layout()
+plt.show()
